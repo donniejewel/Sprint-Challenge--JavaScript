@@ -40,8 +40,13 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = [];
-console.log(lowCaseAnimalNames);
+const lowCaseAnimalNames = displayNames.map((solo) => {
+  return{'Name': solo.Name};
+});
+
+console.log(
+  lowCaseAnimalNames[0].toLowerCase()
+  );
 
 /* Request 3: .filter() 
 
